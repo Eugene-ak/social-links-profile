@@ -1,0 +1,56 @@
+@import "helpers";
+
+@media screen and (max-width: 375px) {
+  .main {
+    width: 350px
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .main {
+    width: 370px;
+  }
+}
+
+.main {
+  @include flex_layout();
+  gap: 1rem;
+  background: $dark-grey;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.section {
+  @include flex_layout();
+  width: 100%;
+}
+
+.top_section {
+  gap: 1.5rem;
+}
+
+.bottom_section {
+  gap: 1rem;
+}
+
+.image {
+  border-radius: 100%;
+}
+
+.div {
+  @include flex_layout;
+  gap: 1rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.location {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: $green;
+}

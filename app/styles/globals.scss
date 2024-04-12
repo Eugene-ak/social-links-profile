@@ -1,0 +1,30 @@
+@import "helpers";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  @include flex_layout();
+  margin: 0;
+  background-color: $off-black;
+  height: 100vh;
+  color: $white;
+  font-size: 14px;
+}
+
+a {
+  @include flex_layout();
+  width: 100%;
+  padding: 1rem;
+  background: $grey;
+  color: $white;
+  border-radius: 5px;
+  font-weight: 700;
+
+  &:hover {
+    background: $green;
+    color: $off-black;
+    cursor: pointer;
+  }
+}
